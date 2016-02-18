@@ -1,0 +1,180 @@
+html {
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	background-color: white;
+	color: #4a174d;
+}
+
+.nav a:link, a:visited {
+    background-color: #7e747e;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav a:hover, a:active {
+    background-color: white;
+    color: #7e747e;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#7e747e;
+
+}
+
+li {
+	float: left;
+	text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color:#7e747e;
+}
+
+.about div{
+	margin-right: 20px
+	margin-left: 20px;
+}
+
+  .nav li {
+    float: right;
+  }
+  .nav ul {
+    overflow: auto;
+     margin: 0 auto;
+  }
+  
+
+title {
+	text-align: center;
+	color: #4a174d;
+	font-size: 60px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+
+}
+
+img {
+	heighth: 500px
+	width: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-color:#4a174d ; 
+}
+
+h1 {
+	color: #4a174d;
+	font-size: 30px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+}
+
+.h-portfolio h1{
+	color: #4a174d;
+	font-size: 35px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	page-break-after: auto;
+}
+.header {
+	color: #4a174d;
+	font-size: 32px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	}
+
+.about h2 {
+	color: #4a174d;
+	font-size: 30px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+
+}
+
+.role {
+	color: #4a174d;
+	font-size: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+}
+
+p{
+	color: #7e747e;
+	font-size: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+}
+
+.blurb {
+	font-size: 16px;
+}
+
+h3 {
+	color: #4a174d;
+	font-size: 25px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+}
+
+ footer .container .navbar-footer {
+  float: left;
+  margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#7e747e;
+
+
+}
+
+.container a:link, a:visited {
+    background-color: #7e747e;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container a:hover, a:active {
+    background-color: white;
+    color: #7e747e;
+}
+
+footer .navbar-right {
+  float: right;
+ }
+
+
+ div #skills .skill {
+  text-align: center;
+}
+#skills .skill .well {
+  margin: 20px;
+}
+#skills .skill i {
+  font-size: 44px;
+  margin-right: auto;
+	margin-left: auto;
+}
+#skills #my-work {
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+

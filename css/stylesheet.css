@@ -46,10 +46,15 @@ a {
 
 }
 
-a:hover {
+nav a:hover {
 	border-bottom-color: #cc3333;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
+}
+
+.quick-links a:hover {
+	color:#993333;
+	text-decoration: none;
 }
 
 header {

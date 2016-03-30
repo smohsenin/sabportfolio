@@ -1,0 +1,84 @@
+
+/*utility classes*/
+html {
+  box-sizing: border-box;
+}
+
+*,*:after, *:before {
+  box-sizing: inherit;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/*base styles*/
+
+header, footer, main, section {
+  border: 2px solid orchid;
+  padding: 10px;
+
+}
+
+article, nav {
+  border: 2px solid dimgray;
+  padding: 15px;
+}
+
+/*layout*/
+
+nav {
+  float: left;
+  width: 10%;
+}
+
+.ah {
+  width: 20%;
+  padding-left: 30px;
+  float: left;
+
+}
+
+.thinger {
+  float: right;
+}
+
+.thinger aside {
+  float: left;
+}
+
+aside {
+  width: 100px;
+  background-color: gray;
+}
+
+article {
+  float: left;
+  width: 100%;
+}
+
+section {
+  float: left;
+  width: 33.3%;
+}
+
+.bottom {
+  margin: auto;
+  padding-top: 10px;
+}
+
+.top-nav {
+  margin: auto;
+}
+
+
+.container {
+  max-width: 900px;
+  margin:auto;
+}

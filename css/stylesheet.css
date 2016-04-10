@@ -116,7 +116,7 @@ footer {
 		padding: 20px 0 20px 0;
 }
 
-.navbar-bottom a:hover {
+.navbar-bottom a:hover{
 	border-bottom-color: white;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;

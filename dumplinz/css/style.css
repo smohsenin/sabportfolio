@@ -52,7 +52,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-a {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ header {
   float: left;
 }
 #logoImage{
-  width: 115px;
+  width: 165px;
   height: 115px;
   padding-top: 3px;
   } 
@@ -146,7 +146,7 @@ header {
 
 
 .overlay{  
-  background:rgba(0,0,0,.75);
+  background:rgba(252, 247, 244, 0.50);
  text-align:center;
  padding:45px 0 66px 0;
  opacity:0;
@@ -162,11 +162,105 @@ header {
   }
 
 a .hovertext {  
-  color:rgba(255,255,255,.85);
+  color:rgba(82, 109, 175, 0.85);
   font-size:20px;
   text-decoration: none;
   }
 
+/*responsive nav styles*/
+.responsiveNav{
+  width:50%; 
+  background: white; 
+  height:50px; 
+  line-height:50px;
+  display: none;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color: #526DAF;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color: #526DAF;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.responsiveMenu{
+  z-index:1000000;
+  font-weight:bold;
+  font-size:0.8em;
+  width:100%;
+  background:white;
+  position:absolute;
+  text-align:center;
+}
+
+.responsiveMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.responsiveMenu li {
+  display: block;
+  padding:15px 0 15px 0;
+  border-bottom:#526DAF 1px solid;
+}
+
+.responsiveMenu li:hover{
+  display: block; 
+  background: white;
+  padding:15px 0 15px 0;
+  border-bottom:#526DAF 1px solid;
+}
+
+.responsiveMenu ul li a {
+ text-decoration:none;
+  margin: 0px; color:#526DAF;
+}
+
+.responsiveMenu ul li a:hover {
+  color: #526DAF;
+  text-decoration:none;
+}
+
+.responsiveMenu a{
+  text-decoration:none;
+  color:#526DAF;
+}
+
+.responsiveMenu a:hover{
+  text-decoration:underline;
+  color:#526DAF;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
 
 /*body styles*/
 .hero {
@@ -226,8 +320,19 @@ a .hovertext {
 footer {
   width: 100%;
   color: white;
-  background-color: #253260;
+  background-color: #526DAF;
   padding: 20px;
   text-align:right;
   font-size: 1REM;
 }
+
+/*media queries*/
+ @media screen and (max-width: 768px) {
+  .topNav {
+    display:none;
+  }
+
+  .responsiveNav {
+    display: inline-block;
+  }
+ }

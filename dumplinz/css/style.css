@@ -303,16 +303,38 @@ a .hovertext {
   padding-bottom: 0px;
 }
 
-.form {
-  text-align: center;
+.form, {
+  padding-bottom: 50px;
+}
+
+h1, .form {
+    text-align: center;
   color: white;
   text-shadow: 2px 2px #526DAF;
-  padding-bottom: 50px;
 }
 
 .dumpling-form {
   width: 100px;
   display: inline;
+}
+
+.dumplingBody {
+  color: #526DAF;
+  size: .8REM;
+  text-align: center;
+}
+
+.dumplingBody p {
+  padding-bottom: 10px;
+}
+
+/*MapAPI*/
+
+#map, #pinterestApi {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  padding-bottom: 40px;
 }
 
 

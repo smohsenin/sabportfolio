@@ -2,16 +2,16 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one,two,three">
+    	<meta name="description" content="Dim Summit is an illustrated study of the magnificent dumpling.">
+    	<meta name="keywords" content="dumplings, dim sum,">
+    	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-		<title>DIM SUMMIT</title>
+		<title>DIM SUMMIT|HOME</title>
 
 		
 		<!-- CSS links -->
-		
-		<link rel="stylesheet" href="css/normalize.css" type="text/css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		  <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 
 <!-- header start & logo -->
@@ -20,7 +20,7 @@
 		<header class="container-fluid"> 
 			<div class="logo">
 			<a href="index.html" class="logoImage hide">
-				<img src="images/logo.png" id="logoImage" alt="Dim Summit Logo Image">
+				<img src="images/logo2.png" id="logoImage" alt="Dim Summit Logo Image">
 			</a>
 			</div>
 
@@ -106,25 +106,26 @@
 				<div class="row">
 					<div class="form .col-md-12">
 						<h1>select a dumpling</h1>
-							<form id="dumplingSelection form-inline">
-								<select class="form-control dumpling-form">
-								  <option>Vegetarian</option>
-								  <option>Meats</option>
+							<form name="dumplingSelection" id="dumplingSelection form-inline">
+								<select class="form-control dumpling-form" id="dumplingType1">
+								  <option class="veg" name="veg">Vegetarian</option>
+								  <option name="meat">Meats</option>
 								</select>
 								<span class="dumplingText"> + </span>
-								<select class="form-control dumpling-form">
-									  <option>Steamed</option>
-									  <option>Fried</option>
+								<select class="form-control dumpling-form" id="dumplingType2">
+									  <option class="steamed" name="steamed">Steamed</option>
+									  <option name="fried">Fried</option>
 								</select>
 								<span class="dumplingText"> = </span>
-								<button type="submit" class="btn btn-default">Badabing</button>
+								<button type="submit" class="dumplingSubmit btn btn-default">Badabing</button>
 							</form>
 					</div>
 				</div>
 			</div>
 		</div>
 			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/index.js"></script>
+				<script src="js/index.js"></script>
+
 		</body>
 
 <!-- FOOTER -->

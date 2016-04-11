@@ -72,10 +72,5 @@ $('dumplingSelection').submit(function addEntry(event) {
 
 		 if( firstDropDownValue === 'veg' && secondDropDownValue === 'steamed') {
   			document.location.href = 'vegsteamed.html';
-			}
-			  
-
-		});
-		
-
+		}
 });

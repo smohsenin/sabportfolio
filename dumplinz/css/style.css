@@ -303,11 +303,11 @@ a .hovertext {
   padding-bottom: 0px;
 }
 
-.form, {
+.form {
   padding-bottom: 50px;
 }
 
-h1, .form {
+h1, h2, .form {
     text-align: center;
   color: white;
   text-shadow: 2px 2px #526DAF;

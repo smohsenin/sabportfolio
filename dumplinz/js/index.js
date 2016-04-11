@@ -1,20 +1,21 @@
 $(document).ready(function() {
 
-// responsive nav//
-$( ".cross" ).hide();
-$( ".responsiveMenu" ).hide();
-
-$( ".hamburger" ).click(function() {
-	$( ".responsiveMenu" ).slideToggle( "slow", function() {
-	$( ".hamburger" ).hide();
-	$( ".cross" ).show();
-	});
-});
-
-$( ".cross" ).click(function() {
-	$( ".responsiveMenu" ).slideToggle( "slow", function() {
+	// responsive nav/
 	$( ".cross" ).hide();
-	$( ".hamburger" ).show();
+	$( ".responsiveMenu" ).hide();
+
+	$( ".hamburger" ).click(function() {
+		$( ".responsiveMenu" ).slideToggle( "slow", function() {
+			$( ".hamburger	" ).hide();
+			$( ".cross" ).show();
+		});
+	});
+
+	$( ".cross" ).click(function() {
+		$( ".responsiveMenu" ).slideToggle( "slow", function() {
+			$( ".cross" ).hide();
+			$( ".hamburger" ).show();
+		})
 	});
 
 
@@ -64,13 +65,16 @@ $( ".cross" ).click(function() {
 	// 	}
 	// });
       
-// DUMPLING SELECTION !! //
-$('dumplingSelection').submit(function addEntry(event) {
+	// DUMPLING SELECTION !! //
+	$('#dumplingSelection').submit(function addEntry(event) {
 
-		var firstDropDownValue =$('#dumplingType1').val();
-		var secondDropDownValue =$('#dumplingType2').val();
+		event.preventDefault();
 
-		 if( firstDropDownValue === 'veg' && secondDropDownValue === 'steamed') {
-  			document.location.href = 'vegsteamed.html';
+		var firstDropDownValue = $('#dumplingType1').val();
+		var secondDropDownValue = $('#dumplingType2').val();
+
+		if( firstDropDownValue === 'veg' && secondDropDownValue === 'steamed') {
+	  		document.location.href = 'vegsteamed.html';
 		}
+	});
 });

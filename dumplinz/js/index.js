@@ -76,5 +76,14 @@ $(document).ready(function() {
 		if( firstDropDownValue === 'veg' && secondDropDownValue === 'steamed') {
 	  		document.location.href = 'vegsteamed.html';
 		}
+		if( firstDropDownValue === 'meat' && secondDropDownValue === 'steamed') {
+	  		document.location.href = 'meatsteamed.html';
+		}
+		if( firstDropDownValue === 'veg' && secondDropDownValue === 'fried') {
+	  		document.location.href = 'vegfried.html';
+		}
+		if( firstDropDownValue === 'meat' && secondDropDownValue === 'fried') {
+	  		document.location.href = 'meatfried.html';
+		}
 	});
 });

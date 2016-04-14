@@ -86,4 +86,25 @@ $(document).ready(function() {
 	  		document.location.href = 'meatfried.html';
 		}
 	});
+
+// food2forkAPI//
+// var xhr = new XMLHttpRequest();
+// xhr.open("GET", "http://food2fork.com/api/search", false);
+// xhr.send();
+
+
+
+// BURGER TESTING 
+explodeStatus = false;
+
+	$('#exploder').click(function() {
+		toggleExplode();
+
+	});
+	
+	function toggleExplode() {
+		$('.burger').toggleClass('exploder');
+		$('#exploder').toggleClass('active');
+	}
+	
 });

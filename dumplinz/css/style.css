@@ -330,17 +330,34 @@ h1, h2, .form {
 
 /*MapAPI*/
 
-#map, #pinterestApi, #food2forkAPI {
+#map, #pinterestApi, #food2forkAPI{
   width: 80%;
   height: 500px;
   margin: auto;
   padding-bottom: 40px;
 }
 
+.map {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% ;
+  height: 100%;
+  border: none;
+}
+
 /*BURGER TEST*/
 .burger-container {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   margin: 0;
   padding: 0;

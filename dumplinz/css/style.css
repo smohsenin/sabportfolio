@@ -355,9 +355,14 @@ h1, h2, .form {
 }
 
 /*BURGER TEST*/
-.burger-container {
+.spacing {
+  position: relative;
+  height: 600px;
+  margin-bottom: 5px;
+}
+.dumpling-container {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   margin: 0;
   padding: 0;
@@ -372,20 +377,20 @@ h1, h2, .form {
   display: none;
 }
 
-.churburger .burger {
-  height: 450px;
+.steamed-shrimp .dumpling {
+  height: 400px;
 }
 
-.burger {
+.dumpling {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 375px;
+  width: 400px;
   -webkit-animation: burgerslide 1.5s 0.3s 1 normal backwards cubic-bezier(0, 0.91, 0.22, 0.97);
   -moz-animation: burgerslide 1.5s 0.3s 1 normal backwards cubic-bezier(0, 0.91, 0.22, 0.97);
   -ms-animation: burgerslide 1.5s 0.3s 1 normal backwards cubic-bezier(0, 0.91, 0.22, 0.97);
@@ -409,7 +414,7 @@ h1, h2, .form {
 }
 
 /* line 389, ../sass/partials/_page.scss */
-.burger-container .burger div {
+.dumpling-container .dumpling div {
   position: absolute;
   display: block;
   width: 100%;
@@ -420,9 +425,9 @@ h1, h2, .form {
   transition: all 1s cubic-bezier(0, 0.91, 0.22, 0.97);
 }
 /* line 396, ../sass/partials/_page.scss */
-.burger-container .burger div p {
-  background-color: white;
-  color: black;
+.dumpling-container .dumpling div p {
+  background-color: #526DAF;
+  color: white;
   position: absolute;
   top: 50%;
   right: -50%;
@@ -431,16 +436,16 @@ h1, h2, .form {
   -o-transform: translate(100%, -50%);
   -ms-transform: translate(100%, -50%);
   transform: translate(100%, -50%);
-  font-size: 1.4em;
+  font-size: 1em;
   padding: 10px 15px;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   opacity: 0;
 }
 
 /* line 417, ../sass/partials/_page.scss */
-.burger-container .burger:hover .burger-layer:hover {
+.dumpling-container .dumpling:hover .dumpling-layer:hover {
   -webkit-transform: translate(10%, 0);
   -moz-transform: translate(10%, 0);
   -o-transform: translate(10%, 0);
@@ -448,9 +453,9 @@ h1, h2, .form {
   transform: translate(10%, 0);
 }
 /* line 420, ../sass/partials/_page.scss */
-.burger-container .burger:hover .burger-layer:hover p {
+.dumpling-container .dumpling:hover .dumpling-layer:hover p {
   margin: 5px 0;
-  opacity: 1;
+  opacity: .7;
   -webkit-transform: translate(10%, -50%);
   -moz-transform: translate(10%, -50%);
   -o-transform: translate(10%, -50%);
@@ -458,157 +463,241 @@ h1, h2, .form {
   transform: translate(10%, -50%);
 }
 
-/* line 428, ../sass/partials/_page.scss */
-.chur-layer-10 {
-  background-image: url("../images/chur_layer_10_bun.svg");
-  height: 220px;
-  z-index: 100;
+.dumpling-container .dumpling .dumpling-layer {
+display: none;
+
+}
+
+.dumpling-container .dumpling:hover .dumpling-layer {
+  display: block;
+}
+
+.dumpling-container .dumpling #dumpling-base,
+ .dumpling-container .dumpling #dumpling-base-fm,
+ .dumpling-container .dumpling #dumpling-base-sv,
+  .dumpling-container .dumpling #dumpling-base-fv {
+  display: block;
+}
+
+/*steamed shrimp*/
+
+.dumpling-layer-1 {
+  background-image: url("../images/choppedonionsandgarlic.png");
+  background-size: contain;
+  height: 200px;
+  z-index: 60;
   top: 0;
 }
 
-/* line 435, ../sass/partials/_page.scss */
-.chur-layer-20 {
-  height: 160px;
-  background-image: url("../images/chur_layer_20_cheesesauce.svg");
-  z-index: 90;
-  top: 19%;
-}
 
-/* line 442, ../sass/partials/_page.scss */
-.chur-layer-25 {
-  height: 160px;
-  background-image: url("../images/chur_layer_25_cheesesauce-shadow.svg");
-  z-index: 89;
-  top: 21%;
-}
-
-/* line 449, ../sass/partials/_page.scss */
-.chur-layer-30 {
-  height: 165px;
-  background-image: url("../images/chur_layer_30_pickle.svg");
-  z-index: 80;
-  top: 28%;
-}
-
-/* line 456, ../sass/partials/_page.scss */
-.chur-layer-40 {
+.dumpling-layer-2 {
   height: 185px;
-  background-image: url("../images/chur_layer_40_cheese.svg");
+  background-image: url("../images/carrots.png");
+  background-size: contain;
   z-index: 70;
-  bottom: 40%;
-}
-
-/* line 463, ../sass/partials/_page.scss */
-.chur-layer-50 {
-  height: 205px;
-  background-image: url("../images/chur_layer_50_patty.svg");
-  z-index: 60;
-  bottom: 27%;
-}
-
-/* line 470, ../sass/partials/_page.scss */
-.chur-layer-60 {
-  height: 155px;
-  background-image: url("../images/chur_layer_60_chutney.svg");
-  z-index: 50;
-  bottom: 22%;
-}
-
-/* line 477, ../sass/partials/_page.scss */
-.chur-layer-70 {
-  height: 225px;
-  background-image: url("../images/chur_layer_70_bottom.svg");
-  z-index: 40;
-  bottom: 7%;
-}
-
-/* line 484, ../sass/partials/_page.scss */
-.chur-layer-80 {
-  bottom: 0;
-  height: 198px;
-  background-image: url("../images/chur_layer_80_shadow.svg");
-  z-index: 30;
-}
-
-/* line 770, ../sass/partials/_page.scss */
-.burger:hover, .burger:focus, .burger:active {
-  height: 90%;
-}
-/* line 773, ../sass/partials/_page.scss */
-.burger:hover .shadow-layer, .burger:focus .shadow-layer, .burger:active .shadow-layer {
-  opacity: 0;
-}
-/* line 778, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-10, .burger:focus .marys-layer-10, .burger:active .marys-layer-10 {
-  top: 0%;
-}
-/* line 779, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-20, .burger:focus .marys-layer-20, .burger:active .marys-layer-20 {
-  top: 12.5%;
-}
-/* line 780, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-30, .burger:focus .marys-layer-30, .burger:active .marys-layer-30 {
-  top: 25%;
-}
-/* line 781, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-40, .burger:focus .marys-layer-40, .burger:active .marys-layer-40 {
-  top: 37.5%;
-}
-/* line 782, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-50, .burger:focus .marys-layer-50, .burger:active .marys-layer-50 {
-  bottom: 17%;
-}
-/* line 783, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-60, .burger:focus .marys-layer-60, .burger:active .marys-layer-60 {
-  bottom: 15%;
-}
-/* line 784, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-70, .burger:focus .marys-layer-70, .burger:active .marys-layer-70 {
-  bottom: 4%;
-}
-/* line 785, ../sass/partials/_page.scss */
-.burger:hover .marys-layer-80, .burger:focus .marys-layer-80, .burger:active .marys-layer-80 {
-  bottom: 0;
-}
-/* line 788, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-10, .burger:focus .huxta-layer-10, .burger:active .huxta-layer-10 {
-  top: 0%;
-}
-/* line 789, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-20, .burger:focus .huxta-layer-20, .burger:active .huxta-layer-20 {
   top: 15%;
 }
-/* line 790, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-30, .burger:focus .huxta-layer-30, .burger:active .huxta-layer-30 {
-  top: 20%;
+
+
+.dumpling-layer-3 {
+  height: 205px;
+  background-image: url("../images/scallions.png");
+  background-size: contain;
+  z-index: 80;
+  top: 25%;
 }
-/* line 791, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-40, .burger:focus .huxta-layer-40, .burger:active .huxta-layer-40 {
-  top: 30%;
-}
-/* line 792, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-50, .burger:focus .huxta-layer-50, .burger:active .huxta-layer-50 {
+
+.dumpling-layer-4 {
+  height: 185px;
+  background-image: url("../images/shrimp.png");
+  background-size: contain;
+  z-index: 90;
   top: 40%;
 }
-/* line 793, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-60, .burger:focus .huxta-layer-60, .burger:active .huxta-layer-60 {
-  top: 46%;
+
+
+.dumpling-layer-5 {
+  height: 190px;
+  background-image: url("../images/steameddumpling.png");
+  background-size: contain;
+  z-index: 100;
+  top: 60%;
 }
-/* line 794, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-70, .burger:focus .huxta-layer-70, .burger:active .huxta-layer-70 {
-  bottom: 24%;
+
+/*fried shrimp*/
+
+.dumpling-layer-6 {
+  background-image: url("../images/choppedonionsandgarlic.png");
+  background-size: contain;
+  height: 200px;
+  z-index: 60;
+  top: 0;
 }
-/* line 795, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-80, .burger:focus .huxta-layer-80, .burger:active .huxta-layer-80 {
-  bottom: 18%;
+
+
+
+.dumpling-layer-7 {
+  height: 205px;
+  background-image: url("../images/mushrooms.png");
+  background-size: contain;
+  z-index: 70;
+  top: 15%;
 }
-/* line 796, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-90, .burger:focus .huxta-layer-90, .burger:active .huxta-layer-90 {
-  bottom: 12%;
+
+
+.dumpling-layer-8 {
+ height: 185px;
+  background-image: url("../images/carrots.png");
+  background-size: contain;
+  z-index: 80;
+  top: 25%;
 }
-/* line 797, ../sass/partials/_page.scss */
-.burger:hover .huxta-layer-100, .burger:focus .huxta-layer-100, .burger:active .huxta-layer-100 {
-  bottom: 2%;
+
+.dumpling-layer-9 {
+  height: 185px;
+  background-image: url("../images/shrimp.png");
+  background-size: contain;
+  z-index: 90;
+  top: 40%;
+}
+
+.dumpling-layer-10 {
+  height: 190px;
+  background-image: url("../images/oil.png");
+  background-size: contain;
+  z-index: 100;
+  top: 60%;
+}
+
+
+.dumpling-layer-11 {
+  height: 190px;
+  background-image: url("../images/fried-dumpling.png");
+  background-size: contain;
+  z-index: 100;
+  top: 80%;
+}
+
+/*vegetarian steamed*/
+.dumpling-layer-12 {
+  background-image: url("../images/choppedonionsandgarlic.png");
+  background-size: contain;
+  height: 200px;
+  z-index: 60;
+  top: 0;
+}
+
+
+
+.dumpling-layer-13 {
+  height: 205px;
+  background-image: url("../images/mushrooms.png");
+  background-size: contain;
+  z-index: 70;
+  top: 15%;
+}
+
+
+.dumpling-layer-14 {
+ height: 185px;
+  background-image: url("../images/carrots.png");
+  background-size: contain;
+  z-index: 80;
+  top: 30%;
+}
+
+.dumpling-layer-15 {
+  height: 185px;
+  background-image: url("../images/scallions.png");
+  background-size: contain;
+  z-index: 90;
+  top: 40%;
+}
+
+.dumpling-layer-16 {
+  height: 190px;
+  background-image: url("../images/tofu.png");
+  background-size: contain;
+  z-index: 100;
+  top: 60%;
+}
+
+
+.dumpling-layer-17 {
+  height: 190px;
+  background-image: url("../images/steameddumpling.png");
+  background-size: contain;
+  z-index: 100;
+  top: 80%;
+}
+
+/*vegetarian fried*/
+.dumpling-layer-18 {
+  background-image: url("../images/choppedonionsandgarlic.png");
+  background-size: contain;
+  height: 200px;
+  z-index: 60;
+  top: 0;
+}
+
+
+
+.dumpling-layer-19 {
+  height: 205px;
+  background-image: url("../images/mushrooms.png");
+  background-size: contain;
+  z-index: 70;
+  top: 15%;
+}
+
+
+.dumpling-layer-20 {
+ height: 185px;
+  background-image: url("../images/carrots.png");
+  background-size: contain;
+  z-index: 80;
+  top: 30%;
+}
+
+.dumpling-layer-21 {
+  height: 185px;
+  background-image: url("../images/leeks.png");
+  background-size: contain;
+  z-index: 90;
+  top: 40%;
+}
+
+.dumpling-layer-22 {
+  height: 190px;
+  background-image: url("../images/tofu.png");
+  background-size: contain;
+  z-index: 100;
+  top: 60%;
+}
+
+
+.dumpling-layer-23 {
+  height: 190px;
+  background-image: url("../images/steameddumpling.png");
+  background-size: contain;
+  z-index: 100;
+  top: 80%;
+}
+
+
+
+
+.chur-layer-80 {
+  top: 65%;
+  left: 3%;
+  height: 198px;
+  background-image: url("../images/chur_layer_80_shadow.svg");
+  z-index: 35;
+}
+
+
+.dumpling:hover, .dumpling:focus, .dumpling:active {
+  height: 90%;
 }
 
 

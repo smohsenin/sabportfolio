@@ -95,59 +95,68 @@
 		</header>
 <!-- body body -->
 <body class="dumplingBody">
-<h1>STEAMED VEGGIE DUMPLING</h1>
-<p>best steamed veggie dumplings in dc reside here</p>
-<!-- <div id="map" style="width:500px;height:380px;"></div> -->
-<div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
+<h1>Steamed Vegetarian Dumpling</h1>
+<p>hover hover hover</p>
 
-		  	  var uluru = {lat: 38.9072, lng: -77.0369};
-		  var map = new google.maps.Map(document.getElementById('map'), {
-		    zoom: 15,
-		    center: uluru
-		  });
+<div class="spacing">
+    <section class="dumpling-container steamed-shrimp">
+    	 <a id="exploder"><p>Explode</p></a>
 
-		  var contentString = '<div id="content">'+
-		      '<div id="siteNotice">'+
-		      '</div>'+
-		      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-		      '<div id="bodyContent">'+
-		      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-		      'sandstone rock formation in the southern part of the '+
-		      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-		      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-		      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-		      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-		      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-		      'Aboriginal people of the area. It has many springs, waterholes, '+
-		      'rock caves and ancient paintings. Uluru is listed as a World '+
-		      'Heritage Site.</p>'+
-		      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-		      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-		      '(last visited June 22, 2009).</p>'+
-		      '</div>'+
-		      '</div>';
+ 
 
-		  var infowindow = new google.maps.InfoWindow({
-		    content: contentString
-		  });
 
-		  var marker = new google.maps.Marker({
-		    position: uluru,
-		    map: map,
-		    title: 'Uluru (Ayers Rock)'
-		  });
-		  marker.addListener('click', function() {
-		    infowindow.open(map, marker);
-		  });
-		}
-	
-      
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCensicA0ut-yVJ4bodYNIURPQQaRIALJk&callback=initMap"
-    async defer></script>
+        <div class="dumpling">
+          <div class="dumpling-layer dumpling-layer-12">
+            <p> Ginger & Garlic </p>
+          </div>
+
+          <div class="dumpling-layer dumpling-layer-13">
+            <p>Mushrooms</p>
+          </div>
+
+
+          <div class="dumpling-layer dumpling-layer-14">
+            <p>Carrots</p>
+          </div>
+
+          <div class="dumpling-layer dumpling-layer-15">
+            <p>Scallions</p>
+          </div>
+
+             <div class="dumpling-layer dumpling-layer-16">
+            <p>Tofu</p>
+          </div>
+
+          <div class="dumpling-layer
+         dumpling-layer-17" id="dumpling-base-sv">
+            <p>Steamed Dumpling Wrapper</p>
+          </div>
+        <!--   <div class="chur-layer-80">
+          </div> -->
+        </div>
+        
+
+
+    </section>
+</div>
+
+<div class="row">
+					<div class="form .col-md-12">
+						<h1>select another dumpling!</h1>
+							<form name="dumplingSelection" id="dumplingSelection" class="form-inline">
+								<select class="form-control dumpling-form" id="dumplingType1">
+								  <option name="veg" value="veg">Vegetarian</option>
+								  <option name="meat" value="meat">Shrimp</option>
+								</select>
+								<span class="dumplingText"> + </span>
+								<select class="form-control dumpling-form" id="dumplingType2">
+									  <option name="steamed" value="steamed">Steamed</option>
+									  <option name="fried" value="fried">Fried</option>
+								</select>
+								<span class="dumplingText"> = </span>
+								<button type="submit" class="dumplingSubmit btn btn-default">Bao Chicka Wowwow</button>
+							</form>
+					</div>
 
 
 <!-- scriptz -->

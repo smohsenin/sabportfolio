@@ -403,11 +403,35 @@ h1, h2, .form {
   text-shadow: 2px 2px #526DAF;
 }
 
-h3 {
+.about h3 {
   text-align: left;
   color: #526DAF;
-  padding-bottom: 1%;
+  padding-top: 5rem;
+  font-weight: 900;
+  font-size: 3rem;
 }
+
+.aboutHeaderBackground {
+  background-image: url("../images/aboutheader.jpeg");
+  background-size: contain;
+  background-repeat: repeat, no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.aboutLayer {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    opacity: .7;
+}
+
+
+
 
 .dumpling-form {
   width: 100px;
@@ -799,7 +823,7 @@ display: none;
 
 .dumpling-layer-23 {
   height: 190px;
-  background-image: url("../images/steameddumpling.png");
+  background-image: url("../images/fried-dumpling.png");
   background-size: contain;
   z-index: 100;
   top: 80%;

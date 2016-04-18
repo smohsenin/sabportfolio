@@ -355,12 +355,15 @@ display: none;
 .aboutVideo {
   background-color: #9DAAD3;
   height:300px;
- padding-top: 65px;
+ padding-top: 40px;
  border-left: white 2px dotted;
 }
 
 .aboutVideo iframe {
   border: white 3px solid;
+  min-width: 355px;
+  min-height: 200px;
+  width: 40%;
 }
 .about h3, h4 {
   text-align: left;

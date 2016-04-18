@@ -339,8 +339,6 @@ display: none;
 }
 
 .aboutList {
-  float: left;
-  width: 50%;
   background-color: white;
   opacity: .;
   height: 300px;
@@ -355,8 +353,6 @@ display: none;
 }
 
 .aboutVideo {
-  float: left;
-  width: 50%;
   background-color: #9DAAD3;
   height:300px;
  padding-top: 65px;

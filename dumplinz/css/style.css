@@ -96,12 +96,12 @@ header {
 
 .topNav {
   float: right;
-  width: 50%;
+  width: 60%;
 }
 
 .navItem {
   width: 25%;
-  float: left;
+  float: right;
 }
 
 /*.navItem a:hover{
@@ -144,9 +144,15 @@ header {
     background-size:cover;
 }
 
+.active {
+  background-color: white;
+  font-color: #526DAF;
+  text-align: center;
+   padding:45px 0 66px 0;
 
-.overlay{  
-  background:rgba(252, 247, 244, 0.50);
+}
+.overlay,  a:active {  
+  background: white;
  text-align:center;
  padding:45px 0 66px 0;
  opacity:0;
@@ -169,7 +175,7 @@ a .hovertext {
 
 /*responsive nav styles*/
 .responsiveNav{
-  width:50%; 
+  width:100%; 
   background: white; 
   height:50px; 
   line-height:50px;
@@ -266,6 +272,90 @@ a .hovertext {
 .hero {
   position: relative;
 }
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-test img {
+  width: 100%;
+}
+
+.hero-test {
+  position: absolute;
+  top: 50;
+  left: 60;
+  width: 760px;
+  z-index: 100;
+}
+
+.hero-container .hero-test div {
+  position: absolute;
+  display: block;
+
+
+}
+
+
+.hero-container .hero-test .hero-dumpling {
+display: none;
+
+}
+
+.hero-container .hero-test:hover .hero-dumpling {
+  display: block;
+
+}
+
+.hero-container .hero-test #hero-base{
+  display: block;
+}
+
+#hero-base {
+  background-image: url("../images/dimsummithero2.jpg");
+     background-size: contain;
+    background-repeat: no-repeat;
+  top: 10%;
+  left: 20%;
+  height: 500px;
+  z-index: 90;
+  width: 100%;
+}
+
+.hero-dumpling-1{
+  background-image: url("../images/dimsummit-26.jpg");
+     background-size: contain;
+  top: 22%;
+  left: 30%;
+  height: 250px;
+  width: 270px;
+  z-index: 100;
+}
+
+.aboutText {
+  color:#526DAF;
+  text-align: left;
+}
+
+.aboutList {
+  float: left;
+  width: 50%;
+  background-color: white;
+  opacity: .;
+}
+
+.aboutList li {
+  text-align: left;
+    font-size: .5em;
+}
+
+.aboutVideo {
+  float: left;
+  width: 50%;
+  padding-top: 20px;
+  background-color: #9DAAD3;
+}
 
 /*bring this back if you want that hover on the hero*/
 /*
@@ -313,6 +403,12 @@ h1, h2, .form {
   text-shadow: 2px 2px #526DAF;
 }
 
+h3 {
+  text-align: left;
+  color: #526DAF;
+  padding-bottom: 1%;
+}
+
 .dumpling-form {
   width: 100px;
   display: inline;
@@ -323,10 +419,22 @@ h1, h2, .form {
   size: .8REM;
   text-align: center;
 }
-
+.itallic {
+  font-style: italic;
+}
 .dumplingBody p {
   padding-bottom: 10px;
 }
+
+/*.dumplingSelection button .dumplingSubmit {
+background: white;
+color: #526DAF;;
+}
+
+.dumplingSelection button .dumplingSubmit:hover {
+  background-color: #526DAF;
+  color: white;
+}*/
 
 /*MapAPI*/
 
@@ -335,6 +443,10 @@ h1, h2, .form {
   height: 500px;
   margin: auto;
   padding-bottom: 40px;
+}
+
+.map-padding {
+  margin: 2% 0 10% 0;
 }
 
 .map {
@@ -354,7 +466,7 @@ h1, h2, .form {
   border: none;
 }
 
-/*BURGER TEST*/
+/*DUMPLING INGREDIENTS*/
 .spacing {
   position: relative;
   height: 600px;
@@ -379,10 +491,18 @@ h1, h2, .form {
 
 .steamed-shrimp .dumpling {
   height: 400px;
+   background-image: url ("../images/swirlsblue.png");
+         background-size: contain;
 }
+.dumpling-background {
+      background-image: url ("../images/swirlsblue.png");
 
+
+}
 .dumpling {
   position: absolute;
+  background: url ("../images/swirlsblue.png");
+  background-size: contain;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -413,7 +533,7 @@ h1, h2, .form {
   transition: all 0.5s cubic-bezier(0, 0.91, 0.22, 0.97);
 }
 
-/* line 389, ../sass/partials/_page.scss */
+
 .dumpling-container .dumpling div {
   position: absolute;
   display: block;
@@ -424,7 +544,7 @@ h1, h2, .form {
   -ms-transition: all 1s cubic-bezier(0, 0.91, 0.22, 0.97);
   transition: all 1s cubic-bezier(0, 0.91, 0.22, 0.97);
 }
-/* line 396, ../sass/partials/_page.scss */
+
 .dumpling-container .dumpling div p {
   background-color: #526DAF;
   color: white;
@@ -444,7 +564,7 @@ h1, h2, .form {
   opacity: 0;
 }
 
-/* line 417, ../sass/partials/_page.scss */
+
 .dumpling-container .dumpling:hover .dumpling-layer:hover {
   -webkit-transform: translate(10%, 0);
   -moz-transform: translate(10%, 0);
@@ -470,6 +590,7 @@ display: none;
 
 .dumpling-container .dumpling:hover .dumpling-layer {
   display: block;
+
 }
 
 .dumpling-container .dumpling #dumpling-base,
@@ -700,15 +821,33 @@ display: none;
   height: 90%;
 }
 
+/*hero testing*/
+
+
 
 /*FOOTER STYLE*/
 footer {
-  width: 100%;
   color: white;
   background-color: #526DAF;
-  padding: 20px;
+  padding: 20px 0;
   text-align:right;
   font-size: 1REM;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border: white 2px solid;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+footer a:hover {
+  color: #526DAF;
+  background-color: white;
+  border: #526DAF 1px solid;
+ 
+
 }
 
 /*media queries*/
@@ -718,6 +857,6 @@ footer {
   }
 
   .responsiveNav {
-    display: inline-block;
+    display: block;
   }
  }

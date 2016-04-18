@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$( ".responsiveMenu" ).hide();
 
 	$( ".hamburger" ).click(function() {
+		$(".logo").hide();
 		$( ".responsiveMenu" ).slideToggle( "slow", function() {
 			$( ".hamburger	" ).hide();
 			$( ".cross" ).show();
@@ -15,9 +16,17 @@ $(document).ready(function() {
 		$( ".responsiveMenu" ).slideToggle( "slow", function() {
 			$( ".cross" ).hide();
 			$( ".hamburger" ).show();
+			$(".logo").show();
 		})
 	});
 
+ 	$(function() {
+        $("topNav [href]").each(function() {
+    		if (this.href == window.location.href) {
+        		$(this).addClass("active");
+        }
+    })
+    });   
 
 // select menus//
      
@@ -95,16 +104,16 @@ $(document).ready(function() {
 
 
 // BURGER TESTING 
-explodeStatus = false;
+// explodeStatus = false;
 
-	$('#exploder').click(function() {
-		toggleExplode();
+// 	$('#exploder').click(function() {
+// 		toggleExplode();
 
-	});
+// 	});
 	
-	function toggleExplode() {
-		$('.burger').toggleClass('exploder');
-		$('#exploder').toggleClass('active');
-	}
+// 	function toggleExplode() {
+// 		$('.burger').toggleClass('exploder');
+// 		$('#exploder').toggleClass('active');
+// 	}
 	
 });
